@@ -1,4 +1,4 @@
-CREATE TABLE agrupado(
+CREATE TABLE IF NOT EXISTS agrupado(
    fecha date PRIMARY KEY, 
    cod_localidad INTEGER NOT NULL,
    id_provincia INTEGER NOT NULL,

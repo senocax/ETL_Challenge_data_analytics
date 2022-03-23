@@ -92,4 +92,5 @@ cine_columns = ['provincia','Pantallas', 'Butacas', 'espacio_INCAA']
 
 #df_cine_total
 df_c.groupby(['provincia'], as_index = False).count()[cine_columns]
+print(df_c)
 #df_cine_total

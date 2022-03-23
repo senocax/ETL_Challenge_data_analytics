@@ -1,6 +1,8 @@
 from sqlalchemy import create_engine  
 from sqlalchemy import text
 import logging
+from extraction_data import *
+from transform_data import *
 import psycopg2
 DATABASE_URI = 'postgresql://postgres:postgres@localhost/'
 
@@ -16,5 +18,7 @@ def DB_create ():
 if __name__ ==  "__main__":
     """_main_
     """
-    DB_create()
     logging.getLogger("Create DB")
+    DB_create()
+    
+

@@ -4,9 +4,14 @@ from datetime import *
 from os import path, mkdir, makedirs
 import logging
 
-dic_csv = {'museos': 'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_01c6c048-dbeb-44e0-8efa-6944f73715d7',
-           'cines':'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_392ce1a8-ef11-4776-b280-6f1c7fae16ae' ,
-           'bibliotecas': 'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_01c6c048-dbeb-44e0-8efa-6944f73715d7'}
+dic_csv = {'museos':
+           'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_4207def0-2ff7-41d5-9095-d42ae8207a5d',
+           'cines':
+           'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_392ce1a8-ef11-4776-b280-6f1c7fae16ae' ,
+           'bibliotecas': 
+           'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_01c6c048-dbeb-44e0-8efa-6944f73715d7'}
+
+list_save=[]
 
 for k, v in dic_csv.items():
     r = requests.get(v)
@@ -24,7 +29,11 @@ for k, v in dic_csv.items():
         if not path.isdir(file_path):
                 makedirs(file_path)
                 logging.info('Create directory')
+                
         print(file_path)
         save = path.join(file_path, file)
+        list_save.append(save)
+        print(list_save)
         open(save, 'wb').write(r.content)
         logging.info('File Downloaded')
+            
