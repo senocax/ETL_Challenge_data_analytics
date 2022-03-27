@@ -5,7 +5,7 @@ Proyecto  challenge de Alkemy para Data Analytics. Se extraen 3 datasets de una 
 
 ## Deploy
 
-● utilizar entorno virtual (venv)
+● Utilizar entorno virtual (venv)
 
 ● Insta lar dependencias requiments.txt.
 
