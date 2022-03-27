@@ -86,11 +86,12 @@ df_total_category[1]
 
 # cantidad por fuente
 tot_source = {'Museo': df_m.size, 'Biblioteca':df_b.size , 'Cine':df_c.size }
-pd.DataFrame(tot_source.items(), columns = ['source', 'count'])
+table_total_source = pd.DataFrame(tot_source.items(), columns = ['source', 'count'])
 # procesamiento cine
 cine_columns = ['provincia','Pantallas', 'Butacas', 'espacio_INCAA']
 
 #df_cine_total
-df_c.groupby(['provincia'], as_index = False).count()[cine_columns]
-print(df_c)
+df_cine_total = df_c.groupby(['provincia'], as_index = False).count()[cine_columns]
+
+#print(df_c)
 #df_cine_total
