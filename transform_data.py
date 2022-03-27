@@ -3,9 +3,9 @@ from extraction_data import list_save
 
 df1 = pd.read_csv(list_save[0])
 df1.columns
-rename_columns = {'cod_loc':'cod_localidad',
-         'idprovincia':'id_provincia',
-         'iddepartamento':'id_departamento',
+rename_columns = {'Cod_Loc':'cod_localidad',
+         'IdProvincia':'id_provincia',
+         'IdDepartamento':'id_departamento',
          'categoria': 'categoría',
          'Localidad':'localidad',
          'Nombre':'nombre',

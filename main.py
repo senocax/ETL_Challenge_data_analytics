@@ -4,6 +4,7 @@ import logging
 from extraction_data import *
 from transform_data import *
 import psycopg2
+
 DATABASE_URI = 'postgresql://postgres:postgres@localhost/'
 
 def DB_create ():
