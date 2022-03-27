@@ -24,8 +24,13 @@ def psql_insert_copy(table, conn, keys, data_iter):
         cur.copy_expert(sql=sql, file=s_buf)
 
 engine = create_engine('postgresql://postgres:postgres@localhost/')
+#create table principal
 df_table.to_sql('table_principal', engine, if_exists='replace', method=psql_insert_copy)
+#create table count category
 df_total_category[0].to_sql('table_category', engine, if_exists='replace', method=psql_insert_copy)
+#create table max order for source
 table_total_source.to_sql('table_source', engine, if_exists='replace', method=psql_insert_copy)
+#create table order count for province and category
 df_total_category[1].to_sql('table_province_category', engine, if_exists='replace', method=psql_insert_copy)
+#create table cine
 df_cine_total.to_sql('cine_result', engine, if_exists='replace', method=psql_insert_copy)
