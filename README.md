@@ -7,7 +7,7 @@ Proyecto  challenge de Alkemy para Data Analytics. Se extraen 3 datasets de una 
 
 ● Utilizar entorno virtual (venv)
 
-● Insta lar dependencias requirements.txt
+● Instalar dependencias requirements.txt
 
 ● Base de datos postgreSQL
 
