@@ -10,6 +10,9 @@ Proyecto  challenge de Alkemy para Data Analytics. Se extraen 3 datasets de una 
 ● Instalar dependencias requirements.txt
 
 ● Base de datos postgreSQL
+```
+# "postgres://<USERNAME>:<PASSWORD>@<IP_ADDRESS>:<PORT>/<DATABASE_NAME>"
+```
 
 ## Estado del proyecto
 Terminado
