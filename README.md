@@ -15,7 +15,7 @@ pip install requirements.txt
 ```
 ● Base de datos postgreSQL
 ```
-postgres://<USERNAME>:<PASSWORD>@<IP_ADDRESS>:<PORT>/<DATABASE_NAME>
+postgresql://<USERNAME>:<PASSWORD>@<IP_ADDRESS>:<PORT>/<DATABASE_NAME>
 ```
 
 ## Estado del proyecto
