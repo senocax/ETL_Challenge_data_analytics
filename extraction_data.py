@@ -5,6 +5,12 @@ from os import path, makedirs
 import logging
 
 def download_data():
+    """download and convert data into url to csv
+
+        Returns:
+        object: list of dataframe and date path
+     """
+
     url_csv = {'museos':
             'https://datos.gob.ar/dataset/cultura-mapa-cultural-espacios-culturales/archivo/cultura_4207def0-2ff7-41d5-9095-d42ae8207a5d',
             'cines':
@@ -14,7 +20,7 @@ def download_data():
 
 
     list_save=[]
-
+    # Parse url for extract link, create file csv, format date path
     for category, url in url_csv.items():
         r = requests.get(url)
         r.encoding = 'utf-8'

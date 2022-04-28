@@ -2,6 +2,14 @@ import logging
 import pandas as pd
 
 def transform (data_downloaded):
+    """transform data
+
+    Args:
+    data_downloaded (object): dataframe downloaded
+
+    Returns:
+    object: object of dataframes becoming to table database then
+    """
 
     list_save =[data_downloaded[0][0],data_downloaded[0][1],data_downloaded[0][2]]
     fecha = data_downloaded[1]
