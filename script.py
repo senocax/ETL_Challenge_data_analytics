@@ -15,8 +15,9 @@ database_user = config['DEFAULT']['DB_USER']
 database_password = config['DEFAULT']['DB_PASSWORD']
 database_name = config['DEFAULT']['DB_NAME']
 database_host = config['DEFAULT']['DB_HOST']
+database_port = config['DEFAULT']['DB_PORT']
 
-DATABASE_URI = f'postgresql://{database_user}:{database_password}@{database_host}/'
+DATABASE_URI = f'postgresql://{database_user}:{database_password}@{database_host}:{database_port}/{database_name}'
 
 def DB_create ():
     """create DB with read
