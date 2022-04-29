@@ -1,6 +1,6 @@
 import logging
 from extraction_data import download_data
-from load_data import DB_create
+from script import DB_create
 from transform_data import transform
 from load_data import DB_load
 

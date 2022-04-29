@@ -15,13 +15,16 @@ pip install requirements.txt
 ```
 ● Configurar Base de datos postgreSQL en archivo config.ini
 ```
-[DEFAULT]
 DB_NAME = default_db_name
 DB_USER = default_db_user
 DB_PASSWORD = default_db_password
 DB_HOST = default_db_host
 DB_PORT = default_port_host
 
+```
+● run main
+```
+python main.py
 ```
 
 ## Estado del proyecto
