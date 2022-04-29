@@ -1,7 +1,7 @@
 # ETL_Challenge_data_analytics
 Data Analytics with Python
 
-Proyecto  challenge de Alkemy para Data Analytics. Recopilacion de 3 datasets desde una URL para luego analizarlos y cargarlos en una base de datos en PostgreSQL.
+Proyecto  challenge de Alkemy para Data Analytics. Recopilacion de 3 datasets con sus respectivas fechas, descargadas desde una URL para luego analizarlos y cargarlos en una base de datos en PostgreSQL.
 
 ## Deploy
 
