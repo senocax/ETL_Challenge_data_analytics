@@ -9,7 +9,7 @@ Proyecto  challenge de Alkemy para Data Analytics. Recopilacion de 3 datasets co
 ```
 python -m venv path\to\myenv
 ```
-● Clonar repositorio
+● Clonar repositorio en el entorno virtual creado
 ```
 git clone https://github.com/senocax/ETL_Challenge_data_analytics
 ```
