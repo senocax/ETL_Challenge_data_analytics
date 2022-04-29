@@ -38,7 +38,6 @@ def download_data():
                     makedirs(file_path)
                     logging.info('Create directory if not exists')
                     
-            print(file_path)
             save = path.join(file_path, file)
             list_save.append(save)
             open(save, 'wb').write(r.content)

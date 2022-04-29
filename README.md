@@ -18,8 +18,8 @@ pip install requirements.txt
 DB_NAME = default_db_name
 DB_USER = default_db_user
 DB_PASSWORD = default_db_password
-DB_HOST = default_db_host
-DB_PORT = default_port_host
+DB_HOST = 12.0.0.1
+DB_PORT = 5432
 
 ```
 ● run main

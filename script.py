@@ -32,7 +32,7 @@ def DB_create ():
                 query = text(file.read())
                 con.execute(query)
     except exc.SQLAlchemyError as e:
-        print(type(e))
+        logging.info(type(e))
     return engine
 
 def sql_insert_csv(table, conn, keys, data_iter):

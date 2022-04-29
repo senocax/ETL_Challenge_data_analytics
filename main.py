@@ -14,10 +14,13 @@ if __name__ ==  "__main__":
     logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
     logging.info('Init process...')
     #init process download, transformation and load data
-    data_downloaded = download_data()
-    data_transformation = transform(data_downloaded)
-    connect = DB_create ()
-    DB_load(data_transformation, connect)
+    try:
+        data_downloaded = download_data()
+        data_transformation = transform(data_downloaded)
+        connect = DB_create ()
+        DB_load(data_transformation, connect)
+    except:
+        logging.info("Something went wrong")
 
     logging.info('Finish process...')
 
